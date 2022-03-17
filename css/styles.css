@@ -1,2 +1,117 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+:root {
+    --white: #fff;
+    --dark-blue: #0d1238;
+    --light-blue: #272f70;
+    --dark-green: #374d12;
+    --light-green: #54761b;
+}
+
+body {
+    background: var(--dark-blue) url(../img/oriental-tiles.png) center top repeat;
+    color: var(--white);
+}
+
+
+/* global typography */
+
+h2 {
+    font-family: serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+
+/* section / form */
+
+section {
+    background-color: rgba(13, 18, 56, .80);
+    margin: 5rem 0;
+    padding: 1rem;
+}
+
+fieldset {
+    border: none;
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border-radius: 5px;
+    padding: 0 0 1rem 0;
+    overflow: hidden;
+}
+
+fieldset>p {
+    text-align: center;
+    background-color: var(--light-green);
+    color: white;
+    padding: 0.75rem;
+}
+
+fieldset>div {
+    padding: 0 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+fieldset input {
+    padding: 0 0.5rem;
+}
+
+fieldset input {
+    width: 100%;
+    line-height: 2.5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: #eeeff0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+
+/* attribute selector */
+
+input[type=radio],
+input[type=checkbox] {
+    width: unset;
+}
+
+input[type="submit"] {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+
+/* 1440px breakpoint */
+
+section {
+    max-width: 1440px;
+}
+
+
+/* 1000px breakpoint */
+
+@media screen and (min-width:1000px) {
+    section {
+        margin: 5rem auto;
+        display: flex;
+    }
+    section form {
+        flex: 0 0 650px;
+    }
+    .field-of-interest {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .field-of-interest h3 {
+        width: 100%;
+    }
+    .field-of-interest div {
+        flex: 1 0 50%;
+    }
+}

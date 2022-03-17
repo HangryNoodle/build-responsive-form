@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,84 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <section>
+        <div>
+            <h2>Learn Web Design, Coding & Much More</h2>
+
+            <p>
+                Our honey is being brazenly stolen on a massive scale! This is worse than anything bears have done! I intend to do something. Oh, Barry, stop. Who told you humans are taking our honey? That's a rumor. Do these look like rumors? That's a conspiracy theory.
+                These are obviously doctored photos.
+            </p>
+        </div>
+
+        <form action="#" method="post" name="signup-form">
+            <fieldset>
+                <p>Try it free for 7 days starting at 25$ a month</p>
+                <div class="field-of-interest">
+                    <h3>Field of Interest</h3>
+                    <div>
+                        <input id="html" name="area-interest" type="radio" value="html" autofocus>
+                        <label for="html">HTML</label>
+                    </div>
+                    <div>
+                        <input id="css" name="area-interest" type="radio" value="css">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div>
+                        <input id="javascript" name="area-interest" type="radio" value="javascript">
+                        <label for="javascript">Javascript</label>
+                    </div>
+                    <div>
+                        <input id="ux-ui-design" name="area-interest" type="radio" value="uxui">
+                        <label for="ux-ui-design">UX/UI</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="f-name">First Name</label>
+                    <input id="f-name" name="f-name" type="text" required minlength="2">
+                </div>
+                <div>
+                    <label for="l-name">Last Name</label>
+                    <input id="l-name" name="l-name" type="text" required minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" placeholder="ie. jsmith@gmail.com" required>
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input id="password" name="password" type="password" autocomplete="off" required minlength="12">
+                </div>
+                <div>
+                    <label for="subscribe">By signing up you are aggreeing to our <a href="#">Terms of
+                            Service</a></label>
+                    <input id="subscribe" type="checkbox">
+                </div>
+                <div>
+                    <input type="submit" value="Claim Your Free Trial">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- form attributes -->
+    <!-- name
+        value
+        type
+        id
+        for
     
+        disabled
+        novalidate
+        autofocus
+        placeholder
+        required
+        autocomplete
+        minlength
+        maxlength-->
 </body>
+
 </html>
